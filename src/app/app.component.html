@@ -1,0 +1,22 @@
+<app-nav>
+    <div right>
+        <button aria-label="Cart" mat-icon-button>
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    </div>
+    <div class="products" product>
+        <mat-card class="product-card" *ngFor="let product of products$[0]?.products">
+       
+            <mat-card-content>
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <p>{{product.description}}</p>
+                <img src="{{ product.image }}" height='100px' width='200px'>
+
+            </mat-card-content>
+    
+        </mat-card>
+
+
+    </div>
+<app-nav>
+
